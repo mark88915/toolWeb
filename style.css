@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navBar{
+    width:100%;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+
+    background-color: black;
+
+    font-size: 0px;
+}
+
+.navBar a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+
+    color:white;
+
+    font-size: 20px;
+}
+
+.navBar a:hover{
+    color: black;
+    background-color: white;
+}
+
+#backgroundImg{
+    width: 100%;
+    height: 100%;
+    display: inline;
+    position: fixed;
+    z-index: -999;
+    opacity: 70%;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    top: 200px;
+
+    text-align: center;
+}
+
+.content{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+    border: double 5px;
+    background-color: #A9A9A9;
+    opacity: 80%;
+}
+
+.iframeContainer{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 200px;
+}
+
+span{
+    font-size: 8px;
+}
+
+iframe{
+    position: relative;
+    margin: auto;
+    padding: 10px;
+}
+
+.SAContainer{
+    position: relative;
+    margin: auto;
+    top: 200px;
+    width: 1200px;
+    height: 400px;
+    display: block;
+
+    border-radius: 12px;
+    border: black solid 5px;
+    background-color: white;
+    opacity: 90%;
+}
+
+
+.SA-Table{
+    border: solid 1px;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+.SA-Table td{
+    padding: 5px;
+    border: solid 1px;
+}
+
+.turn{
+    text-align: center;
+}
+
+.buttonGroup{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#calculate{
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all .3s linear;
+    background-color: blanchedalmond;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#calculate:hover{
+    background-color: tan;
+}
+
+#reset{
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all .3s linear;
+    background-color: blanchedalmond;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#reset:hover{
+    background-color: tan;
+}
+
+#descriptionBtn{
+    padding: 10px 14px;
+    border-radius: 28px;
+    transition: all .3s linear;
+    background-color: tomato;
+
+    font-size: 8px;
+    font-weight: bold;
+}
+
+#descriptionBtn:hover{
+    background-color: rgb(231, 4, 4);
+}
+
+.turnToT, .turnSA{
+    text-align: center;
+}
+
+#blackOut{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70%);
+    overflow: hidden;
+    z-index: 2;
+}
+
+#descriptionContainer{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    display: none;
+    z-index: 3;
+
+    border: solid black 5px;
+    border-radius: 12px;
+    background-color: blanchedalmond;
+}
+
+.descriptionTitle{
+    text-align: center;
+    padding: 10px;
+}
+
+.description{
+    margin: 10px;
+}
+
+strong{
+    color: red;
+}
+
+#ok{
+    font-size: 16px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    border-radius: 12px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#ok:hover{
+    background-color: rgb(216, 213, 213);
+}
+
+/*
+.exampleDiv{
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+}
+
+.imgSpace{
+    width: 295px;
+    height: 200px;
+    position: relative;
+    float: right;
+    top: 10px;
+}
+
+#category1{
+    position: relative;
+    display: none;
+    float: right;
+    width: 140px;
+}
+
+#category2{
+    position: relative;
+    
+    float: left;
+    width: 140px;
+
+}
+*/

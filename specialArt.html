@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/SA.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navBar">
+        <a href="./index.html" id="home"><b>首頁</b></a>
+        <a href="./specialArt.html" id="sa"><b>必殺計量</b></a>
+        <a href="./dmg.html" id="dmg"><b>傷害計算</b></a>
+    </div>
+    
+    <img src="./image/HIGH.jpg" alt="background" id="backgroundImg">
+
+    <div id="blackOut"></div>
+
+    <div class="SAContainer">
+        <table class="SA-Table">
+            <tr class="turn">
+                <td></td>
+                <td>回合1</td>
+                <td>回合2</td>
+                <td>回合3</td>
+                <td>回合4</td>
+                <td>回合5</td>
+                <td>回合6</td>
+                <td>回合7</td>
+                <td>回合8</td>
+                <td>回合9</td>
+                <td>回合10</td>
+                <td>回合11</td>
+                <td>回合12</td>
+                <td>回合13</td>
+                <td>回合14</td>
+            </tr>
+            <tr>
+                <td class="character">角色1：</td>
+                <td>
+                    <select id="turn1-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn2-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn3-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn4-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn5-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn6-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn7-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn8-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn9-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn10-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn11-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn12-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn13-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn14-1">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="character">角色2：</td>
+                <td>
+                    <select id="turn1-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn2-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn3-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn4-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn5-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn6-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn7-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn8-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn9-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn10-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn11-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn12-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn13-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn14-2">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="character">角色3：</td>
+                <td>
+                    <select id="turn1-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn2-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn3-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn4-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn5-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn6-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn7-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn8-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn9-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn10-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn11-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn12-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn13-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn14-3">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="character">角色4：</td>
+                <td>
+                    <select id="turn1-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn2-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn3-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn4-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn5-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn6-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn7-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn8-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn9-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn10-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn11-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn12-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn13-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn14-4">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="character">角色5：</td>
+                <td>
+                    <select id="turn1-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn2-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn3-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn4-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn5-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn6-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn7-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn8-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn9-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn10-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn11-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn12-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn13-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn14-5">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="character">角色6：</td>
+                <td>
+                    <select id="turn1-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn2-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn3-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn4-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn5-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn6-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn7-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn8-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn9-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn10-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn11-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn12-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn13-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="turn14-6">
+                        <option value="0" selected="selected">未行動</option>
+                        <option value="1">0%</option>
+                        <option value="33%">33%</option>
+                        <option value="66%">67%</option>
+                        <option value="100%">100%</option>
+                        <option value="111%">111%</option>
+                        <option value="133%">133%</option>
+                        <option value="144%">144%</option>
+                        <option value="200%">200%</option>
+                        <option value="211%">211%</option>
+                        <option value="0">必殺</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="turnToT">
+                <td>累計計量</td>
+                <td id="turn1ToT">0</td>
+                <td id="turn2ToT">0</td>
+                <td id="turn3ToT">0</td>
+                <td id="turn4ToT">0</td>
+                <td id="turn5ToT">0</td>
+                <td id="turn6ToT">0</td>
+                <td id="turn7ToT">0</td>
+                <td id="turn8ToT">0</td>
+                <td id="turn9ToT">0</td>
+                <td id="turn10ToT">0</td>
+                <td id="turn11ToT">0</td>
+                <td id="turn12ToT">0</td>
+                <td id="turn13ToT">0</td>
+                <td id="turn14ToT">0</td>
+            </tr>
+            <tr class="turnSA">
+                <td>累計必殺</td>
+                <td id="turn1SA">0</td>
+                <td id="turn2SA">0</td>
+                <td id="turn3SA">0</td>
+                <td id="turn4SA">0</td>
+                <td id="turn5SA">0</td>
+                <td id="turn6SA">0</td>
+                <td id="turn7SA">0</td>
+                <td id="turn8SA">0</td>
+                <td id="turn9SA">0</td>
+                <td id="turn10SA">0</td>
+                <td id="turn11SA">0</td>
+                <td id="turn12SA">0</td>
+                <td id="turn13SA">0</td>
+                <td id="turn14SA">0</td>
+            </tr>
+        </table>
+        <div class="buttonGroup">
+            <button id="calculate" onclick="calculate()">計算</button>
+            <button id="reset" onclick="reset()">清除</button>
+            <button id="descriptionBtn" onclick="showDescription()">！</button>
+        </div>
+    </div>
+
+    <div id="descriptionContainer">
+        <h1 class="descriptionTitle">使用說明</h1>
+        <div class="description">
+            <h2>１、每回合最下方的累計必殺代表<strong>該回合行動完後</strong>會有多少必殺可供施放<br>
+                Ex：假設第3回合下方為0而第4回合下方為1，則代表第4回合打完會有一個必殺<br>
+                (選擇該回合施放必殺後累積數不會-1，其目的是為了讓人知道實際累積幾個必殺)<br><br>
+                
+                ２、每回合基礎行動數為1，但為了不影響使用已經預設在裡面了，<br>
+                請使用者<strong>只選擇必殺加速百分比</strong>即可。<br><br>
+                
+                ３、請確認各個必殺增量<strong>技能效果為全體或者自身</strong>。<br>並請熟記較高的數值會蓋過較低的數值且只有冒險與支援可以疊加。<br><br>
+
+                ５、<s>４不吉利</s> 此表格一個必殺以13+8/9次行動計，以整數計算固然可以<br>但回合數一多就有落差。而13+8/9這個數字怎麼來的可以在大群問，應該有人會答。
+            </h2>
+        </div>
+        <!--
+        <div class="imgSpace">
+            <img src="https://truth.bahamut.com.tw/s01/202110/8b26ebb7131eba7ecfe03ec74c77ce8d.JPG" alt="" id="category1">
+            <img src="https://truth.bahamut.com.tw/s01/202110/61071509c77073ab9d7cbcc41f921df9.JPG" alt="" id="category2">
+        </div>
+
+        <div class="exampleDiv" onmouseover="showImage()" onmouseout="dontShowImage()">33%範例</div>
+        -->
+        
+        <button id="ok" onclick="closeDescription()">確認</button>
+    </div>
+</body>
+</html>

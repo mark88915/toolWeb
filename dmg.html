@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dmg.css">
+    <script src="./js/dmg.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navBar">
+        <a href="./index.html" id="home"><b>首頁</b></a>
+        <a href="./specialArt.html" id="sa"><b>必殺計量</b></a>
+        <a href="./dmg.html" id="dmg"><b>傷害計算</b></a>
+    </div>
+    
+    <img src="./image/HIGH.jpg" alt="background" id="backgroundImg">
+
+    <div id="blackOut"></div>
+
+    <div class="dmgContainer">
+        <form class="dmgContent" action="javascript:void(0)">
+            <h1 onclick="partOpenClose(id)" id="main">基礎欄位▼</h1>
+            <div id="mainPart">
+                攻擊力：
+                <input type="text" value="" placeholder="請輸入物理/魔法攻擊力" id="attackP">
+
+                <br>
+
+                主屬加乘：
+                <input type="text" value="" placeholder="請輸入力量/魔力上升%數" id="mainBuff">
+            </div>
+
+            <h1 onclick="partOpenClose(id)" id="skill">技能欄位▼</h1>
+            <div id="skillPart">
+                技能對象：
+                <select id="skillTarget">
+                    <option selected="selected" value="singleTarget">單體</option>
+                    <option value="multiTarget">全體</option>
+                </select>
+
+                技能威力：
+                <select id="skillPower">
+                    <option value="physicalAttack">物理普攻/反擊</option>
+                    <option value="magicalAttack">魔法普攻/反擊</option>
+                    <option value="low" selected="selected">弱威力</option>
+                    <option value="middle">中威力</option>
+                    <option value="high">強威力</option>
+                    <option value="super">超威力</option>
+                    <option value="ultra">超強威力</option>
+                </select>
+
+                <br>
+
+                發動時：
+                <select id="skillBoost">
+                    <option value="noBoost" selected="selected">無上升</option>
+                    <option value="boost">上升</option>
+                    <option value="greatBoost">大幅上升</option>
+                </select>
+    
+                種族殺手觸發：
+                <select id="killer">
+                    <option value="1.0" selected="selected">否</option>
+                    <option value="1.5">是</option>
+                </select>
+            </div>
+
+            <h1 onclick="partOpenClose(id)" id="enemy">敵方數值欄位▼</h1>
+            <div id="enemyPart">
+                敵方防禦力：
+                <input type="text" value="" placeholder="PVE請輸入100" id="enemyDEF">
+
+                敵方耐久加乘：
+                <input type="text" value="" id="enemyEND"><br>
+
+                物理/魔法耐性：
+                <input type="text" value="" id="PADebuff">
+
+                屬性耐性：
+                <input type="text" value="" id="elementDebuff">
+
+                單/全體傷害耐性：
+                <input type="text" value="" id="attackTargetDebuff">
+            </div>
+
+            <h1 onclick="partOpenClose(id)" id="buff">增傷欄位◀</h1>
+            <div id="buffPart" style="display: none;">
+                特殊增傷：
+                <input type="text" value="" placeholder="請輸入一個技能效果上升的%數" id="dmgPerSkill">
+
+                疊加：
+                <select id="times">
+                    <option value="1" selected="selected">1次</option>
+                    <option value="2">2次</option>
+                    <option value="3">3次</option>
+                    <option value="4">4次</option>
+                    <option value="5">5次</option>
+                    <option value="6">6次</option>
+                </select>
+                <br>
+                屬性傷害上升：
+                <input type="text" value="" placeholder="眷族技能於眷族活動時計入" id="elementDmg">
+            </div>
+
+            <h1 onclick="partOpenClose(id)" id="bonus">額外欄位◀</h1>
+            <div id="bonusPart" style="display: none;">
+                被動增傷：
+                <input type="text" value="" id="developmentSkill" placeholder="ex:閃擊/穿擊等百分比">
+
+                武器革新：
+                <select id="ascend">
+                    <option value="0" selected="selected">未革新</option>
+                    <option value="0.03">革新第4階段</option>
+                    <option value="0.06">革新滿</option>
+                </select>
+            </div>
+
+            <h1 onclick="partOpenClose(id)" id="combo">必殺欄位◀</h1>
+            <div id="comboPart" style="display: none;">
+                單回必殺combo：
+                <select id="saCombo">
+                    <option value="1" selected="selected">單必</option>
+                    <option value="2">雙必</option>
+                    <option value="3">三必</option>
+                    <option value="4">四必</option>
+                </select>
+            </div>
+
+            <h1 onclick="partOpenClose(id)" id="battling">戰鬥狀況◀</h1>
+            <div id="battlingPart" style="display: none;">
+                發生爆擊：
+                <select id="critical">
+                    <option value="1.5" selected="selected">是</option>
+                    <option value="1">否</option>
+                </select>
+                發生貫穿：
+                <select id="penentration">
+                    <option value="yes" selected="selected">是</option>
+                    <option value="no">否</option>
+                </select>
+
+                <br>
+                
+                發生格擋：
+                <select id="guard">
+                    <option value="0.5">是</option>
+                    <option value="1" selected="selected">否</option>
+                </select>
+                戰爭遊戲：
+                <select id="wargaming">
+                    <option value="0.2">是</option>
+                    <option value="1" selected="selected">否</option>
+                </select>
+            </div>
+            <h1 id="result"></h1>
+            <div class="buttonGroup">
+                <button onclick="calculateDmg()" id="calculate">計算</button>
+                <input type="reset" value="清除" id="reset">
+                <button onclick="showDescription()" id="descriptionBtn">！</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="descriptionContainer">
+        <h1 class="descriptionTitle">使用說明</h1>
+        <div class="description">
+            <h2>１、此功能參照"<a href="https://forum.gamer.com.tw/C.php?bsn=31981&snA=4012&tnum=5&bPage=2">【心得】傷害計算方式</a>"內文的公式下去製作。<br><br>
+                
+                ２、此功能中所有百分比相關數值接不用填寫"%"，只需填數字即可。<br>ex：若魔力上升技能為20%，在主屬加乘欄位<strong>填寫20而不是20%</strong>。
+                <br><br>
+                
+                ３、弱對方的某數值(如物耐)被降至0以下的話請在開頭加上負號。<br>ex：若物耐是-40%請在物耐欄位填寫<strong>-40</strong>。
+                <br><br>
+
+                ４、發展技能常駐，因為當初忘了考慮而無視條件直接計入，有空會修改。<br>
+                (意思是就算爆擊選擇否但一樣會把你填的閃擊算進來，除非沒填)
+            </h2>
+        </div>
+                    
+        <button id="ok" onclick="closeDescription()">確認</button>
+    </div>
+
+</body>
+</html>
