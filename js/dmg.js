@@ -260,3 +260,7 @@ function closeDescription(){
     var descriptionWindow = document.getElementById("descriptionContainer");
     descriptionWindow.style.display = 'none';
 }
+
+function reset(){
+    document.getElementById('result').innerHTML = "";
+}
