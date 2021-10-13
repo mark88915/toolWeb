@@ -217,6 +217,35 @@ function closeDescription(){
     descriptionWindow.style.display = 'none';
 }
 
+function allAccelerater(id){
+    elements = document.getElementsByTagName("select");
+    number = document.getElementById("whichCharacter").value;
+    start = number*14;
+    end = start+14;
+
+    if(id == "thirtyThree"){
+        if(number != 6){
+            for(start; start < end; start++){
+                elements[start].selectedIndex= 2;
+            }
+        }else{
+            for(let i=0; i < elements.length-1; i++){
+                elements[i].selectedIndex= 2;
+            }
+        }
+    }else if(id == "sixtySix"){
+        if(number != 6){
+            for(start; start < end; start++){
+                elements[start].selectedIndex= 3;
+            }
+        }else{
+            for(let i=0; i < elements.length-1; i++){
+                elements[i].selectedIndex= 3;
+            }
+        }
+    }
+}
+
 /*
 function showImage(){
     var img = document.getElementById("category1");

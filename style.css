@@ -79,7 +79,7 @@ iframe{
     margin: auto;
     top: 200px;
     width: 1200px;
-    height: 400px;
+    height: 450px;
     display: block;
 
     border-radius: 12px;
@@ -115,7 +115,19 @@ iframe{
     top: 20px;
 }
 
-#calculate{
+.buttonGroup2{
+    margin: auto;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+    top: 20px;
+}
+
+#whichCharacter{
+    font-size: 20px;
+}
+
+#calculate, #reset, #thirtyThree, #sixtySix{
     padding: 10px 20px;
     border-radius: 4px;
     transition: all .3s linear;
@@ -125,21 +137,7 @@ iframe{
     font-weight: bold;
 }
 
-#calculate:hover{
-    background-color: tan;
-}
-
-#reset{
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: all .3s linear;
-    background-color: blanchedalmond;
-
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#reset:hover{
+#calculate:hover, #reset:hover, #thirtyThree:hover, #sixtySix:hover{
     background-color: tan;
 }
 
