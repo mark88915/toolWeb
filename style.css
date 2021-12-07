@@ -72,6 +72,8 @@ iframe{
     position: relative;
     margin: auto;
     padding: 10px;
+    width: 50%;
+    height: 300px;
 }
 
 .SAContainer{
@@ -79,7 +81,7 @@ iframe{
     margin: auto;
     top: 200px;
     width: 1200px;
-    height: 450px;
+    height: 400px;
     display: block;
 
     border-radius: 12px;
@@ -115,19 +117,7 @@ iframe{
     top: 20px;
 }
 
-.buttonGroup2{
-    margin: auto;
-    padding: 10px;
-    text-align: right;
-    position: relative;
-    top: 20px;
-}
-
-#whichCharacter{
-    font-size: 20px;
-}
-
-#calculate, #reset, #thirtyThree, #sixtySix{
+#calculate{
     padding: 10px 20px;
     border-radius: 4px;
     transition: all .3s linear;
@@ -137,7 +127,21 @@ iframe{
     font-weight: bold;
 }
 
-#calculate:hover, #reset:hover, #thirtyThree:hover, #sixtySix:hover{
+#calculate:hover{
+    background-color: tan;
+}
+
+#reset{
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all .3s linear;
+    background-color: blanchedalmond;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#reset:hover{
     background-color: tan;
 }
 
@@ -161,7 +165,7 @@ iframe{
 
 #blackOut{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -216,6 +220,40 @@ strong{
 
 #ok:hover{
     background-color: rgb(216, 213, 213);
+}
+
+@media (max-width: 799px){
+    .navBar{
+        text-align: center;
+    }
+
+    .navBar a{
+        font-size: 20px;
+    }
+
+    .content{
+        font-size: 16px;
+        width: 80%;
+    }
+    
+    #backgroundImg{
+        content: url(../image/belt_l_04.png);
+    }
+
+    iframe{
+        height: auto;
+        width: auto;
+    }
+
+    #descriptionContainer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #backgroundImg{
+        content: url(../image/belt_l_04.png);
+    }
 }
 
 /*
