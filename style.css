@@ -247,7 +247,7 @@ strong{
     }
     
     #backgroundImg{
-        content: url(../image/belt_l_04.png);
+        content: url(./image/belt_l_04.png);
     }
 
     iframe{
@@ -262,7 +262,7 @@ strong{
 
 @media (max-width: 1024px) {
     #backgroundImg{
-        content: url(../image/belt_l_04.png);
+        content: url(./image/belt_l_04.png);
     }
 }
 
