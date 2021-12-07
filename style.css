@@ -72,8 +72,6 @@ iframe{
     position: relative;
     margin: auto;
     padding: 10px;
-    width: 50%;
-    height: 300px;
 }
 
 .SAContainer{
@@ -81,7 +79,7 @@ iframe{
     margin: auto;
     top: 200px;
     width: 1200px;
-    height: 400px;
+    height: 450px;
     display: block;
 
     border-radius: 12px;
@@ -117,7 +115,19 @@ iframe{
     top: 20px;
 }
 
-#calculate{
+.buttonGroup2{
+    margin: auto;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+    top: 20px;
+}
+
+#whichCharacter{
+    font-size: 20px;
+}
+
+#calculate, #reset, #thirtyThree, #sixtySix{
     padding: 10px 20px;
     border-radius: 4px;
     transition: all .3s linear;
@@ -127,7 +137,7 @@ iframe{
     font-weight: bold;
 }
 
-#calculate:hover{
+#calculate:hover, #reset:hover, #thirtyThree:hover, #sixtySix:hover{
     background-color: tan;
 }
 
