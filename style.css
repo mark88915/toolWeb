@@ -233,6 +233,10 @@ strong{
 }
 
 @media (max-width: 799px){
+    body{
+        overflow: hidden;
+    }
+
     .navBar{
         text-align: center;
     }
@@ -253,6 +257,10 @@ strong{
     iframe{
         height: auto;
         width: auto;
+    }
+
+    .SAContainer{
+        overflow-x: auto;
     }
 
     #descriptionContainer{
