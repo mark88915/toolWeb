@@ -260,7 +260,7 @@ strong{
     }
 
     .SAContainer{
-        overflow-x: auto;
+        overflow-x: scroll;
     }
 
     #descriptionContainer{
